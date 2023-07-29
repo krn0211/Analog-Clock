@@ -6,6 +6,7 @@ function displayTime(){
     let date = new Date();
 
     // Getting hour, mins, secs from date
+    
     let hh = date.getHours();
     let mm = date.getMinutes();
     let ss = date.getSeconds();
@@ -17,7 +18,5 @@ function displayTime(){
     hr.style.transform = `rotate(${hRotation}deg)`;
     min.style.transform = `rotate(${mRotation}deg)`;
     sec.style.transform = `rotate(${sRotation}deg)`;
-
 }
-
 setInterval(displayTime, 1000);
